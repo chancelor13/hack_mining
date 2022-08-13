@@ -1,5 +1,5 @@
 #!bin/sh
-sudo get update
+sudo get upgrade
 sudo get install screen -y
 wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-linux-x64.tar.gz
 tar xf xmrig-6.18.0-linux-x64.tar.gz
